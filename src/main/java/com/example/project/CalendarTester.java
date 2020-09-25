@@ -17,10 +17,8 @@ public class CalendarTester {
          * */
 
         //Call the .get method on myCal using Calendar.DAY_OF_WEEK as the argument
-        int weekday = myCal.get(Calendar.DAY_OF_WEEK);
-        System.out.println("myCal Day of Week: " + weekday);
-        System.out.println("Expected: 4");     //Note: 1 = Sunday, 2 = Monday, etc.
 
+        int weekday = myCal.get(Calendar.DAY_OF_WEEK);
         String weekday0 = null;
         if (weekday == 1) {
             weekday0 = "Sunday";
@@ -43,14 +41,18 @@ public class CalendarTester {
         if (weekday == 7) {
             weekday0 = "Saturday";
         }
-        //Write similar tests for month, year and day of month.
+
+        System.out.println("myCal Day of Week: " + weekday0);
+        System.out.println("Expected: Friday");     //Note: 1 = Sunday, 2 = Monday, etc.
+
+            //Write similar tests for month, year and day of month.
         int month = myCal.get(Calendar.MONTH) + 1;
         System.out.println("myCal Month: " + month);
         System.out.println("Expected: 9");
 
         int monthday = myCal.get(Calendar.DAY_OF_MONTH);
         System.out.println("myCal Day of Month: " + monthday);
-        System.out.println("Expected: 23");
+        System.out.println("Expected: 25");
 
         int year = myCal.get(Calendar.YEAR);
         System.out.println("myCal Year: " + year);
