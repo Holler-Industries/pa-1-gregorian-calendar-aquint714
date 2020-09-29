@@ -94,7 +94,7 @@ public class CalendarTester {
         }
         System.out.println("The new date is " + weekday20 + " " + month2 + "/" + monthday2 + "/" + year2);
 
-        myCal.add(Calendar.DAY_OF_YEAR, -175);
+        myCal = new GregorianCalendar(2020, 06, 14);
         int weekday3 = myCal.get(Calendar.DAY_OF_WEEK);
         int month3 = myCal.get(Calendar.MONTH) + 1;
         int monthday3 = myCal.get(Calendar.DAY_OF_MONTH);
